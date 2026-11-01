@@ -4,17 +4,11 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
- 
-
 PROJECT_ROOT = Path(__file__).parent
 
 print(PROJECT_ROOT)
 
- 
-
 load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
-
- 
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
@@ -24,25 +18,17 @@ MAX_RETRIES = 3
 
 RETRY_DELAY = 2  
 
- 
-
 DEFAULT_DATASET_PATH = PROJECT_ROOT / "scam_detection_dataset.csv"
 
 TEST_DATASET_PATH = PROJECT_ROOT / "test_scam_dataset.csv"
-
- 
 
 TEXT_COLUMNS = ["text", "message_text", "message"]
 
 LABEL_COLUMN = "label"
 
- 
-
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 
 LOGS_DIR = PROJECT_ROOT / "logs"
-
- 
 
 OUTPUTS_DIR.mkdir(exist_ok=True)
 
