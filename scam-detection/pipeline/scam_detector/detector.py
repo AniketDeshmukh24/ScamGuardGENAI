@@ -73,4 +73,6 @@ class ScamDetector:
                     "intent": "Could not determine intent",
                     "risk_factors": ["processing error"]
                 })
+        successful = sum(1 for r in results if r.get("label") != "Uncertain" and "processing_error" not in r.get("risk_factors", []))
+        logger.info(f"Batch processing complete. {successful}/{total_messages} succeeded.")
         return results

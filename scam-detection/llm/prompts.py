@@ -12,7 +12,7 @@ def load_prompt(filename: str) -> str:
     return load_file(PROMPTS_DIR/ filename)
 
 
-PROMPT = load_prompt("reacts.md")
+PROMPT = load_prompt("react.md")
 
 def generate_prompt(user_input : str) -> str:
     

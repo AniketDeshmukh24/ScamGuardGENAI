@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 
-def get_logger(name :str)-> logging.logger:
+def get_logger(name :str)-> logging.Logger:
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s -%(name)s -%(levelname)s - %(message)s')
     return logging.getLogger(name)
@@ -22,4 +22,4 @@ def extract_json_from_text(text : str) -> dict:
 
 def load_file(file_path : str ) -> str :
     """Load and return file contents as string."""  
-    return  Path(file_path).read.text().strip()
+    return Path(file_path).read_text().strip()
