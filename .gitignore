@@ -10,3 +10,4 @@ scam-detection/pipeline/scam_detector/__pycache__/detector.cpython-313.pyc
 scam-detection/llm/__pycache__/__init__.cpython-313.pyc
 scam-detection/llm/__pycache__/client.cpython-313.pyc
 scam-detection/llm/__pycache__/prompts.cpython-313.pyc
+scam-detection/__pycache__/evaluate.cpython-313.pyc

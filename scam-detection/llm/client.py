@@ -25,7 +25,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 class LLMClient:
     """Wrapper for Google Generative AI (Gemini) model."""
     
-    def __init__(self, model_name = "gemini-3.8-flash"):
+    def __init__(self, model_name = "gemini-3.1-flash-lite"):
         self.model = genai.GenerativeModel(model_name)
 
     def generate(self, prompt: str) -> str:

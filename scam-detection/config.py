@@ -12,7 +12,7 @@ load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-DEFAULT_MODEL = 'gemini-3.8-flash'
+DEFAULT_MODEL = 'gemini-3.1-flash-lite'
 
 MAX_RETRIES = 3
 
